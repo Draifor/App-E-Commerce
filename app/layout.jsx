@@ -1,18 +1,18 @@
-import './styles/globals.css'
-import Header from './components/header'
+import "./styles/globals.css";
+import Header from "./components/Header";
 
-export default function RootLayout ({ children }) {
+export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className='dark'>
+      <body className="dark">
         <Header />
         {children}
       </body>
     </html>
-  )
+  );
 }
